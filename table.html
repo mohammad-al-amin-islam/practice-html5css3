@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        th,td{
+            border: 1px solid blue;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            margin-left: 50px; 
+            padding: 0 20px;
+        }
+        ul li:hover{
+            background-color: green;
+        }
+        ul li a{
+            text-decoration: none;
+            color: gray;
+        }
+        nav ul li:hover>ul{
+            display:block;
+            position: absolute;
+            padding:0px;
+            margin:0px;
+        }
+        .dropdown{
+            display: none;
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="creating-table">
+        <table>
+            <caption>Random Table</caption>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>name</th>
+                    <th>name</th>
+                    <th>name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>mrx</td>
+                    <td>mrx</td>
+                    <td>mrx</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/2WutyWapYgY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="">link-1</a></li>
+                <li><a href="">link-2
+                    <ul class="dropdown">
+                        <li><a href="">link-1</a></li>
+                        <li><a href="">link-2</a></li>
+                        <li><a href="">link-3</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="">link-3</a></li>
+                <li><a href="">link-4</a></li>
+                <li><a href="">link-5</a></li>
+            </ul>
+        </nav>
+    </section>
+</body>
+</html>
